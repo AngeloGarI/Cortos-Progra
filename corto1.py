@@ -1,6 +1,16 @@
+numbers = []
 count = 0
-print("Ingreso de números ")
-found = True
+print("........Suma de números....")
 
+found = True
 while found:
-    numeros = int(input("Ingrese el número: "))
+    number = int(input("Ingrese el número: "))
+
+    if number == 0:
+        print("Se termina el programa")
+        found = False
+    else:
+        numbers.append(number)
+        count += number
+
+print(f"La suma de {numbers} es: {count}")
